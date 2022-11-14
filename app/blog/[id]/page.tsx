@@ -42,9 +42,6 @@ export default async function BlogPost({ params }: any) {
                     </div>
                 </div>
             </div>
-
         </>
-
-
     )
 }

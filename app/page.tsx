@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+type News = {
+    id: string,
+    title: string,
+    urlToImage: string,
+    author: string,
+    publishedAt: string,
+    description: string,
+}
+
 const getData = async () => {
     const apiResponse = await fetch(
         "https://my-json-server.typicode.com/italomagnov/JSONServer/posts"
@@ -7,7 +16,7 @@ const getData = async () => {
     return apiResponse.json();
 };
 
-export const NewsContent = async () => {
+const NewsContent = async () => {
     const newsCard = await getData();
     return (
         <>
@@ -15,7 +24,7 @@ export const NewsContent = async () => {
             <section className='md:h-full flex items-center text-gray-600'>
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex justify-center flex-wrap -m-4">
-                        {newsCard.map((info: any) => (
+                        {newsCard.map((info: News) => (
                             <Link key={info.id} href={`/blog/${info.id}`} className="p-4 sm:w-1/2 lg:w-1/3">
                                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-xl transform-cpu:">
                                     <img className="lg:h-72 md:h-48 w-full object-cover object-center" src={info.urlToImage} alt="imagem dos cards" />
