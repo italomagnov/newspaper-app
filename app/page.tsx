@@ -1,10 +1,9 @@
-import RecentNews from './blog/page'
 import styles from './page.module.css'
 
 export default function Home() {
     return (
         <div>
-            <RecentNews />
+            <h3 className={styles.pageText}>Postagens Recentes</h3>
         </div>
     )
 }

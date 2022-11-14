@@ -31,6 +31,7 @@
 }
 
 .pageText {
+    text-align: center;
     color: #f33c3c;
     font-size: 18px;
     font-weight: 300;
