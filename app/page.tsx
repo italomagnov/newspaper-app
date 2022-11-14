@@ -49,5 +49,3 @@ export const NewsContent = async () => {
         </section>
     );
 };
-
-export default NewsContent;

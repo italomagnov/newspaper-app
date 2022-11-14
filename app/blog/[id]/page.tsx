@@ -1,4 +1,3 @@
-import { info } from "console";
 import Link from "next/link";
 
 async function fetchPost(id: string) {
@@ -6,7 +5,7 @@ async function fetchPost(id: string) {
     return apiResponse.json();
 }
 
-export default async function BlogPost({ params, searchParams }: any) {
+export default async function BlogPost({ params }: any) {
     const { id } = params;
 
     const post = await fetchPost(id);
@@ -47,12 +46,4 @@ export default async function BlogPost({ params, searchParams }: any) {
 
 
     )
-    {/* <div className="container flex flex-col items-center justify-center py-8">
-                <Link href="/" className="bg-[#ee3965] w-28 text-center hover:bg-[#181f32] text-white font-bold py-2 px-4 rounded">
-                    Voltar
-                </Link>
-                <img src={post.urlToImage} alt="imagem da noticia" />
-                <h1>{post.title}</h1>
-                <p>{post.content}</p>
-            </div> */}
 }
