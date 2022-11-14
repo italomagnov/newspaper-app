@@ -2,7 +2,7 @@
 
 <h2 align="center">
   Link para acessar o projeto:
-  <a href="https://newspaper-app-ruddy.vercel.app/">Newspaper</a>
+  <a href="https://newspaper-app-ruddy.vercel.app/" target="_blank">Newspaper</a>
 </h2>
 
 <h4 align="center"> 
