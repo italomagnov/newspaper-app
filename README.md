@@ -19,7 +19,7 @@
 
 ## 💻 Sobre o projeto
 
-📰 Newspaper - Projeto criado para o desafio da vaga de Desenvolvedor Front-End - Netshowme
+📰 Newspaper - Projeto criado para o desafio da vaga de Desenvolvedor Front-End
 
 ---
 
